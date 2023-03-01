@@ -1,0 +1,53 @@
+-------------------------------------------------
+
+# 컨테이너에 적용하는 속성 #
+
+1. display: flex;
+  => 내부의 아이템들이 인라인처럼 배치되게 한다.
+  => 아이템들이 각 아이템 크기만큼 너비를 차지한다
+
+  컨테이너를 inline-flex로 설정시 block이 아닌 
+  inline처럼 동작한다.
+
+
+2. flex-direction
+  => main axis의 방향을 결정
+
+
+3. flex-wrap
+  => 컨테이너가 아이템들을 한 줄에 담을 공간이 부족할 때 줄바꿈을
+     어떻게 할지 결정
+  
+  nowrap         => 공간부족시 삐져나감
+  wrap           => 공간부족시 다음 라인으로 줄바꿈
+  wrap-reverse   => 공간부족시 위쪽 라인으로 줄바꿈
+
+
+4. 정렬
+  justify-content
+    => main axis방향의 정렬을 결정
+    
+    flex-start
+    flex-end
+    center
+    space-between : 양쪽 끝에 붙고 균일하게 공백을 나눠가짐
+    space-around  : 각 아이템 좌우에 균일한 공백이 생김
+    space-evenly  : 모든 여백을 동일하게
+
+
+  align-itmes
+    => cross axis방향의 정렬을 결정
+
+    stretch  : 기본값, 수직축으로 제일 긴 녀석만큼 동일하게 늘어남
+    flex-start
+    flex-end
+    center
+    baseline : 텍스트 베이스라인을 기준으로 정렬 (영어 소문자g)
+    
+
+5. align-content
+  => flex-wrap이 wrap으로 설정된 상태에서 행이 
+     2줄이상 된 경우 교차축 방향 정렬을 결정
+  => 수직축이 메인축이라고 생각하고 각줄이 아이템이라 생각하면 쉽다.
+
+-------------------------------------------------
